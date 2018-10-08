@@ -26,5 +26,14 @@ class Client {
     // runtime type of a is A
   }
 }
-
+```
+```
+class J extends K {
+  // J inherits implementationof m1() and m2() from K.
+  // J is also a subtype of K
+}
+class K {
+  m1() { ... }
+  m2() { ... }
+}
 ```
