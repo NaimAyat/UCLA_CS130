@@ -6,3 +6,7 @@
   * Implementation
   * Testing
   * Evolution
+### State Diagrams
+* Initial state - black dot
+* Final state - circled black dot
+* Each box is a class
