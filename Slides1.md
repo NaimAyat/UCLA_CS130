@@ -102,4 +102,17 @@
 * Body condition (invariants):  express constraints on the method. It must be overridden by subclasses
 #### Template Class
 * Templates (generic types) allow a developer to design a class without specifying the exact types on which the class operates
-###
+### Sequence Diagrams
+* Show a time-based view of messages between objects
+* Think of as a table: 
+  * Columns are classes and/or actors
+  * Rows are time steps
+  * Entries shwo control/data flow (method invocations, important state changes)
+* Each object has a dashed lifeline running vertically down the diagram
+  * Objects destroyed during the time covered by the sequence are not usually drawn beyond the message that killed the object
+#### Sequence Diagram Frames
+* `alt`: Alternative fragment for mutual exclusion logic expressed in the guards
+* `loop`: Loop fragment while guard is true. Can also write loop(n) to indicate looping n times. There is discussion to extend to include a FOR loop (e.g., loop (i, 1, 10)
+* `opt`: Optional fragment that exceeds if guard is true
+* `par`: Parallel fragments that execute in parallel
+* `region`: Critical region within which only one thread can run
