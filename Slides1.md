@@ -21,3 +21,10 @@
 #### Use Case Generalization
 * Like a class generalization, a specialized use case can replace or enhance the behavior
 * Ex: `Synchronize Wirelessly` and `Synchronize Serially` point to `Synchronize Data`
+#### Use Case Inclusion
+* A use case can include the behavior of another use case
+* Ex: `Purchase Item` and `Track Packages` are included in `Login`
+#### Use Case Extension
+* Use case extension encapsulates a distinct flow of events that are not considered part of the normal or basic flow
+* Ex: `Log Debugging Info` extends `Purchase Item`
+## State Diagrams
