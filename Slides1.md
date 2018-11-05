@@ -27,4 +27,79 @@
 #### Use Case Extension
 * Use case extension encapsulates a distinct flow of events that are not considered part of the normal or basic flow
 * Ex: `Log Debugging Info` extends `Purchase Item`
-## State Diagrams
+### State Diagrams
+* A state represents a condition of a modeled entity for which some action is performed, some stimulus is received, or some condition is met elsewhere in the system
+* An action is an atomic execution
+* An activity is a more complex collection of behavior that may run for a long duration
+* A transition between two states is represented as an arc from one state to the other
+  * Can be labeled with triggers, guard conditions, actions, and the event or action that creates the entity
+* The initial state is a solid black circle
+### Class Diagrams
+* Models static relationships between the components of a system
+* Classes represent concepts within a system, typically named using nouns
+* A single class represents one or more objects in the system at runtime
+* The multiplicity of a class is specified by a number in the upper right corner of the component
+  * Usually omitted and assumed to be more than 1
+  * Specifying a multiplicity of 1 indicates the class should be a singleton
+* Each box is a class
+  * Name of class
+  * List fields (AKA attributes)
+    * Visibility, type, multiplicity
+  * List methods (AKA functions)
+#### Class Relationships
+* Attribures can also be represented in class relationship notation
+* A line is drawn between the owning class and the target attribute's class
+* Edges show relationships between classes
+  * Dependency
+  * Association
+  * Aggregation
+  * Composition
+  * Generalization
+  * Realization
+##### Dependency
+* Weakest realationship
+* Depicted by a dotted arrow from A to B when class A uses class B
+* Ex: `Train` uses `ButtonPressedEvent`
+##### Association
+* Slightly stronger relationship
+* Depicted by number labels and a solid arrow to indicate multiplicity when class A has a class B
+* Ex. `Train` has a `Button`
+##### Aggregation
+* Strong association
+* Class A owns class B
+* Depicted same as association, but arrow starts from empty diamond
+* Lifetime association (aggregation) vs. long-term association 
+##### Composition
+* Strongest relationship
+* Class A is made up of class B
+* Depicted same as aggregation, but arrow starts from filled diamond
+##### Generalization
+* Shows inheritance
+* Subclass B has an is a relationship with superclass A, or superclass A is a generalization of subclass B
+* Same as `extends` in java
+* Depicted by filled arrow from subclass to superclass
+* Ex. `EmergencyButton` and `RequestButton` inheret from `Button`
+##### Realization
+* Shows subtyping
+* Class A implements interface B
+* Depicted by filled arrow with dotted line
+#### Operations in Class Diagrams
+* Visibility
+  * Public + 
+  * Private =
+  * Protected #
+  * Package ~
+* Parameter list
+  * Direction (in/out)
+  * Name
+  * Type
+  * Multiplicity
+* Polymorphism
+* Abstract operations (italics)
+#### Constraints on Operations
+* Pre condition: express what the state of the system must be before the associated operation can be invoked
+* Post condition: express what the state of the system will be after the operation completes
+* Body condition (invariants):  express constraints on the method. It must be overridden by subclasses
+#### Template Class
+* Templates (generic types) allow a developer to design a class without specifying the exact types on which the class operates
+###
