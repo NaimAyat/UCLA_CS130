@@ -24,3 +24,13 @@
 * ANT is a framework; it can easily be extended by additional tasks
   * By subclassing the Task class
 * Can configure at runtime (e.g., replace original javac)
+## JAVADOC 
+* Extracts documentation from special comments and converts it into hypertext (HTML)
+* Documentation becomes a part of the system and can be maintained and constructed with automated tools
+## Recap
+* The aim of automatic program construction is to create all derived components from a number of source components.
+* If a component has changed, all the components derived from it must be rebuilt.
+* MAKE is a tool for building programs, during the course of which existing derived files are reused as much as possible.
+* ANT allows specific extensions by the user as well as third parties. ANT is more task oriented. 
+* If the documentation becomes part of the source text, it can be maintained and edited with tools.
+* It is easier to keep the documentation synced with source code. 
