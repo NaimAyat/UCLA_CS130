@@ -11,7 +11,7 @@
 * Publish and subscribe
 * Notification / listener-based implementation
 * What is easy to change using Observer?
-  * # of observers, adding a new observer to a subject
+  * Number of observers, adding a new observer to a subject
 * What is difficult to do using Observer?
   * Changing internal states of subject and modifying the interface of update
 ## Mediator Design Pattern
